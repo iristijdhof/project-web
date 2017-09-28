@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verhalenwebsite</title>
+    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+           <img src="images/logons.png" alt='Logo NS'>
+           <img id="menu-switch" src="images/hamburger.png" alt='Hamburgermenu'>
+            <ul id="main-menu">
+                <li><img src="images/verhalen.png" alt="verhalen"><a href="index.html">Verhalen</a></li>
+                <li><img src="images/info.png" alt="info">Over</li>
+                <li><img src="images/account.png" alt="account"><a href="inlog.html">Account</a></li>
+                <li><img src="images/loep.png" alt="zoeken">Zoeken</li>
+            </ul>
+        </nav>
+        <img src="images/centraal.png" alt='Amsterdam centraal'>
+        <div>
+            <h1>Welkom!</h1>
+            <p>Ben je al op vakantie of wil je je graag even voorbereiden op de wereldse reis die je gaat maken? Wij van de NS maken jouw reis completer met allerlei verhalen.</p>
+            <p>We wensen je een fijne reis en geniet van de verhalen.</p>  
+        </div>
+            <img id="trein" src="images/trein.png" alt="trein">
+            <p id="ingelogd">Ingelogt als: <a href='inlog.html'>Iris Tijdhof</a></p>
+    </header>    
+    <form>
+      <legend id="filteren">Verhalen filteren</legend>
+        <fieldset>
+            <legend>Categorieën</legend>
+                <label><input type="checkbox" name="categorie zon" checked> Zon</label>
+                <label><input type="checkbox" name="categorie winter" checked> Winter</label>
+                <label><input type="checkbox" name="categorie steden" checked> Steden</label>
+                <label><input type="checkbox" name="categorie dagje weg" checked> Dagje weg</label>
+        </fieldset>
+        <fieldset>
+             <legend>Genre</legend>
+                 <label><input type="checkbox" name="Genre fictie" checked> Fictie</label>
+                 <label><input type="checkbox" name="Genre non-fictie" checked> Non-fictie</label>
+                 <label><input type="checkbox" name="Genre thriller" checked> Thriller</label>
+                 <label><input type="checkbox" name="Genre kinderen" checked> Kinderen</label>
+                 <label><input type="checkbox" name="Genre informatie" checked> Informatie</label>
+        </fieldset>
+        <fieldset>
+            <legend>Leeftijd</legend>
+                <label><input id="age" type="checkbox" name="leeftijd 6 t/m 12" checked> 6 t/m 12 jaar</label>
+                <label><input type="checkbox" name="leeftijd 13 t/m 16" checked> 13 t/m 16 jaar</label>
+                <label><input type="checkbox" name="leeftijd 17 t/m 21" checked> 17 t/m 21 jaar</label>
+                <label><input type="checkbox" name="leeftijd ouder" checked> ouder</label>
+                <label><input type="checkbox" name="leeftijd 50+" checked> 50+</label>
+        </fieldset>
+        <fieldset>
+            <legend>Leesduur</legend>
+                <label><input type="checkbox" name="leesduur 0 t/m 5 minuten" checked> 0 t/m 5 minuten</label>
+                <label><input type="checkbox" name="leesduur 5 t/m 10 minuten" checked> 5 t/m 10 minuten</label>
+                <label><input type="checkbox" name="leesduur 10 t/m 15 minuten" checked> 10 t/m 15 minuten</label>
+                <label><input type="checkbox" name="leesduur 15 t/m 20 minuten" checked> 15 t/m 20 minuten</label>
+                <label><input type="checkbox" name="leesduur 20 t/m 25 minuten" checked> 20 t/m 25 minuten</label>
+                <label><input type="checkbox" name="leesduur 25 t/m 30 minuten" checked> 25 t/m 30 minuten</label>
+        </fieldset>
+    </form>
+    <form>
+        <legend id="sorteren">Verhalen sorteren</legend>
+        <fieldset>
+            <label><input type="radio" name="sorteren van A t/m Z"> van A t/m Z</label>
+            <label><input type="radio" name="sorteren van Z t/m A"> van Z t/m A</label>
+            <label><input type="radio" name="sorteren van 0 t/m 99"> van nummer 0 t/m 99</label>
+            <label><input type="radio" name="sorteren van 99 t/m 0"> van nummer 99 t/m 0</label>
+            <label><input type="radio" name="sorteren meest relevant"> Meest relevant</label>
+            <label><input type="radio" name="sorteren minst relevant"> Minst relevant</label>
+            <label><input type="radio" name="sorteren meeste likes"> Meeste likes</label>
+            <label><input type="radio" name="sorteren minste likes"> Minste likes</label>
+        </fieldset>    
+    </form>
+    <section>
+        <article>
+            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
+            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
+            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
+            <footer>
+                <button>Like</button>
+                <p id="likes">23 likes</p>
+            </footer>
+        </article>
+        <article>
+            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
+            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
+            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
+            <footer>
+                <button>Like</button>
+                <p id="likes">23 likes</p>
+            </footer>
+            <img id="likeafbeelding" src="images/like.png" alt="like">
+        </article>
+        <article>
+            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
+            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
+            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
+            <footer>
+                <button>Like</button>
+                <p id="likes">23 likes</p>
+            </footer>
+            <img id="likeafbeelding" src="images/like.png" alt="like">
+        </article>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>s
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E6E6E9;
+}
+
+/* Header */
+
+header nav {
+    padding: 1.5em;
+    background-color: #fff;
+}
+
+header nav > img {
+    height: 1.5em;
+}
+
+header ul {
+    list-style: none;
+    display: none;
+}
+
+header li {
+    border-bottom: .0625rem solid #e6e6e9;
+}
+
+header li img {
+    height: 1.5em;
+    padding: .5em .5em .5em 0;
+}
+
+header li a {
+    text-decoration: none;
+    color: #003082;
+    height: 1.5em;
+}
+
+/* Newsbox */
+header > img {
+    width: 150%;
+    margin-left: -25%;
+}
+
+header > div {
+    background-color: #ffc917;
+    border-left: .4em solid #003082;
+    padding: 0.5em;
+    margin: 0 1.5em;
+}
+
+header > div h1 {
+    font-size: 2.25em;
+    color: #003082;
+}
+
+header > div p {
+    color: #003082;
+}
+
+/* verhalen */
+
+section article:first-of-type {
+    margin-top: 1.3em;
+}
+
+section article {
+    background-color: #fff;
+    margin: 0 1.5em 1.3em 1.5em;
+    padding: 1em;
+}
+
+section article h2 {
+    font-size: 1.5em;
+}
