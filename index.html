@@ -1,114 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Verhalenwebsite</title>
     <link rel="stylesheet" type="text/css" href='css/style.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
+    <link rel="stylesheet" type="text/css" href='fonts/fonts.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> </head>
+
 <body>
+   	<p id="messageRed" class="message red active">Let op: Je hebt op een ander apparaat 3 verhalen gedownload, wil je deze hier ook offline kunnen lezen, klik dan hier om te downloaden.<span>X</span></p>
+   	<p id="messageGreen" class="message green">De 3 verhalen zijn gedownload, je kunt ze nu in een lijst bekijken door de filterfunctie ‘’offline gedownload’’ te activeren.<span>X</span></p>
     <header>
-        <nav>
-           <img src="images/logons.png" alt='Logo NS'>
-           <img id="menu-switch" src="images/hamburger.png" alt='Hamburgermenu'>
-            <ul id="main-menu">
-                <li><img src="images/verhalen.png" alt="verhalen"><a href="index.html">Verhalen</a></li>
-                <li><img src="images/info.png" alt="info">Over</li>
-                <li><img src="images/account.png" alt="account"><a href="inlog.html">Account</a></li>
-                <li><img src="images/loep.png" alt="zoeken">Zoeken</li>
-            </ul>
+        <nav> 
+           <img src="images/logons.png" alt='Logo NS'> <img id="menu-switch" src="images/hamburgermenu.png" alt='Hamburgermenu'> <h5>Menu</h5>
+                <ul id="main-menu">
+                    <li><img src="images/verhalen.png" alt="verhalen"><a href="index.html">Verhalen</a></li>
+                    <li><img src="images/info.png" alt="info">Over</li>
+                    <li><img src="images/account.png" alt="account"><a href="inlog2.html">Account</a></li>
+                    <li><img src="images/loep.png" alt="zoeken">Zoeken</li>
+                </ul>
         </nav>
-        <img src="images/centraal.png" alt='Amsterdam centraal'>
+	</header> 
+        <div></div>
         <div>
-            <h1>Welkom!</h1>
-            <p>Ben je al op vakantie of wil je je graag even voorbereiden op de wereldse reis die je gaat maken? Wij van de NS maken jouw reis completer met allerlei verhalen.</p>
-            <p>We wensen je een fijne reis en geniet van de verhalen.</p>  
+            <div>
+                <h1>Welkom op de verhalenwebsite!</h1>
+                <p>Ben je al op vakantie of wil je je graag even voorbereiden op de wereldse reis die je gaat maken? Wij van de NS maken jouw reis completer met allerlei verhalen.</p>
+                <p>We wensen je een fijne reis en geniet van de verhalen.</p>
+            </div>
+            <p>Ingelogt als: <a href='inlog2.html'>Iris Tijdhof</a></p>
         </div>
-            <img id="trein" src="images/trein.png" alt="trein">
-            <p id="ingelogd">Ingelogt als: <a href='inlog.html'>Iris Tijdhof</a></p>
-    </header>    
-    <form>
-      <legend id="filteren">Verhalen filteren</legend>
-        <fieldset>
-            <legend>Categorieën</legend>
-                <label><input type="checkbox" name="categorie zon" checked> Zon</label>
-                <label><input type="checkbox" name="categorie winter" checked> Winter</label>
-                <label><input type="checkbox" name="categorie steden" checked> Steden</label>
-                <label><input type="checkbox" name="categorie dagje weg" checked> Dagje weg</label>
-        </fieldset>
-        <fieldset>
-             <legend>Genre</legend>
-                 <label><input type="checkbox" name="Genre fictie" checked> Fictie</label>
-                 <label><input type="checkbox" name="Genre non-fictie" checked> Non-fictie</label>
-                 <label><input type="checkbox" name="Genre thriller" checked> Thriller</label>
-                 <label><input type="checkbox" name="Genre kinderen" checked> Kinderen</label>
-                 <label><input type="checkbox" name="Genre informatie" checked> Informatie</label>
-        </fieldset>
-        <fieldset>
-            <legend>Leeftijd</legend>
-                <label><input id="age" type="checkbox" name="leeftijd 6 t/m 12" checked> 6 t/m 12 jaar</label>
-                <label><input type="checkbox" name="leeftijd 13 t/m 16" checked> 13 t/m 16 jaar</label>
-                <label><input type="checkbox" name="leeftijd 17 t/m 21" checked> 17 t/m 21 jaar</label>
-                <label><input type="checkbox" name="leeftijd ouder" checked> ouder</label>
-                <label><input type="checkbox" name="leeftijd 50+" checked> 50+</label>
-        </fieldset>
-        <fieldset>
-            <legend>Leesduur</legend>
-                <label><input type="checkbox" name="leesduur 0 t/m 5 minuten" checked> 0 t/m 5 minuten</label>
-                <label><input type="checkbox" name="leesduur 5 t/m 10 minuten" checked> 5 t/m 10 minuten</label>
-                <label><input type="checkbox" name="leesduur 10 t/m 15 minuten" checked> 10 t/m 15 minuten</label>
-                <label><input type="checkbox" name="leesduur 15 t/m 20 minuten" checked> 15 t/m 20 minuten</label>
-                <label><input type="checkbox" name="leesduur 20 t/m 25 minuten" checked> 20 t/m 25 minuten</label>
-                <label><input type="checkbox" name="leesduur 25 t/m 30 minuten" checked> 25 t/m 30 minuten</label>
-        </fieldset>
-    </form>
-    <form>
-        <legend id="sorteren">Verhalen sorteren</legend>
-        <fieldset>
-            <label><input type="radio" name="sorteren van A t/m Z"> van A t/m Z</label>
-            <label><input type="radio" name="sorteren van Z t/m A"> van Z t/m A</label>
-            <label><input type="radio" name="sorteren van 0 t/m 99"> van nummer 0 t/m 99</label>
-            <label><input type="radio" name="sorteren van 99 t/m 0"> van nummer 99 t/m 0</label>
-            <label><input type="radio" name="sorteren meest relevant"> Meest relevant</label>
-            <label><input type="radio" name="sorteren minst relevant"> Minst relevant</label>
-            <label><input type="radio" name="sorteren meeste likes"> Meeste likes</label>
-            <label><input type="radio" name="sorteren minste likes"> Minste likes</label>
-        </fieldset>    
-    </form>
-    <section>
-        <article>
-            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
-            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
-            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
-            <footer>
-                <button>Like</button>
-                <p id="likes">23 likes</p>
-            </footer>
-        </article>
-        <article>
-            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
-            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
-            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
-            <footer>
-                <button>Like</button>
-                <p id="likes">23 likes</p>
-            </footer>
-            <img id="likeafbeelding" src="images/like.png" alt="like">
-        </article>
-        <article>
-            <h2 id="verhaal">Verhaal #1: Een geweldige ervaring!</h2>
-            <img id="foto" src="images/vakantie.png" alt="foto verhaal">
-            <p> Dit verhaal gaat over een vakantie waar mensen hebben genoten en veel ... <a href='detail.html'> meer lezen</a> </p>
-            <footer>
-                <button>Like</button>
-                <p id="likes">23 likes</p>
-            </footer>
-            <img id="likeafbeelding" src="images/like.png" alt="like">
-        </article>
-    </section>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>s
+    <form>
+        <ul>
+            <li>Verhalen filteren
+                <ul>
+                    <li>Categorieen</li>
+                        <li><label><input type="checkbox" name="categorie zon"> Zon</label></li>
+                        <li><label><input type="checkbox" name="categorie zon"> Winter</label></li>
+                        <li><label><input type="checkbox" name="categorie zon"> Steden</label></li>
+                        <li><label><input type="checkbox" name="categorie zon"> Dagje</label></li>
+                    <li>Genre</li>
+                        <li><label><input type="checkbox" name="Genre fictie"> Fictie</label></li>
+                        <li><label><input type="checkbox" name="Genre non-fictie"> Non-fictie</label></li>
+                        <li><label><input type="checkbox" name="Genre thriller"> Thriller</label></li>
+                        <li><label><input type="checkbox" name="Genre kinderen"> Kinderen</label></li>
+                        <li><label><input type="checkbox" name="Genre informatie"> Informatie</label></li>
+                    <li>Leeftijd</li>
+                        <li><label><input id="age" type="checkbox" name="leeftijd 6 t/m 12"> 6 t/m 12 jaar</label></li>
+                        <li><label><input type="checkbox" name="leeftijd 13 t/m 16"> 13 t/m 16 jaar</label></li>
+                        <li><label><input type="checkbox" name="leeftijd 17 t/m 21"> 17 t/m 21 jaar</label></li>
+                        <li><label><input type="checkbox" name="leeftijd ouder"> ouder</label></li>
+                        <li><label><input type="checkbox" name="leeftijd 50+"> 50+</label></li>
+                    <li>Leesduur</li>
+                        <li><label><input type="checkbox" name="leesduur 0 t/m 5 minuten"> 0 t/m 5 minuten</label></li>
+                        <li><label><input type="checkbox" name="leesduur 5 t/m 10 minuten"> 5 t/m 10 minuten</label></li>
+                        <li><label><input type="checkbox" name="leesduur 10 t/m 15 minuten"> 10 t/m 15 minuten</label></li>
+                        <li><label><input type="checkbox" name="leesduur 15 t/m 20 minuten"> 15 t/m 20 minuten</label></li>
+                        <li><label><input type="checkbox" name="leesduur 20 t/m 25 minuten"> 20 t/m 25 minuten</label></li>
+                        <li><label><input type="checkbox" name="leesduur 25 t/m 30 minuten"> 25 t/m 30 minuten</label></li>
+                </ul>
+            </li>
+            <li>Verhalen sorteren
+                <ul>
+                    <li><label><input type="radio" name="filteren"> van A t/m Z</label></li>
+                    <li><label><input type="radio" name="filteren"> van Z t/m A</label></li>
+                    <li><label><input type="radio" name="filteren" checked="checked"> van nummer 0 t/m 99</label></li>
+                    <li><label><input type="radio" name="filteren"> van nummer 99 t/m 0</label></li>
+                    <li><label><input id="sortButton" type="radio" name="filteren"> Meest relevant</label></li>
+              	</ul>
+            </li>
+        </ul>
+    </form>
+    <main>
+        <h2>99 verhalen gevonden:</h2>
+        <article>
+            <h2>Verhaal #34: iPhone</h2>
+            <div class="flex">
+                <div> <img src="images/gefrusteerd.png" alt="gefrusteerd"> </div>
+                <div>
+                    <p> Om een uur of 12 stapte ik op CS bus 21 uitomdat ik naar de Ipenbare Biliotheek op weg was, waar is Stijloefeningen van Q-No wilde... </p>
+                    <footer>
+                        <img id="like-button" class="like-icon" src="images/like.png" alt="opslaan"><p>Download voor offline gebruik</p> <a href=#> Lees meer   ></a> 
+                    </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <h4>1234x gedownload</h4>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #3: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op...</p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Verhaal #2: Een geweldige ervaring!</h2>
+            <div class="flex">
+                <div> <img src="images/berg.jpg" alt="bergen"> </div>
+                <div>
+                    <p> Samen met 10 andere reizigers gaan we op pad om Oostenrijk te ontdekken en samen een geweldige ervaring op... </p>
+                    <footer>
+                        <a href="#"><img class="like-icon" src="images/like.png" alt="opslaan">Download voor offline gebruik</a> <a href=#> Lees meer   ></a> </footer>
+                </div>
+            </div>
+        </article>
+    </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>

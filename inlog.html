@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Inlogpagina</title>
-</head>
+    <link rel="stylesheet" type="text/css" href='css/style.css'>
+    <link rel="stylesheet" type="text/css" href='fonts/fonts.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> </head>
+
 <body>
-       <header>
-        <img src="images/logo.png" alt='Logo verhalenwebsite'>
-        <img src="images/logo%20transavia.png" alt='Logo transavia'>
-        <p>Ingelogt als:<a href='inlog.html'> Iris Tijdhof</a></p>
-    <ol>
-        <li>Verhalen</li>
-        <li>Over</li>
-        <li>Account</li>
-        <li>Zoeken</li>
-    </ol>
-    </header>
-    <b>inloggen</b>
-        <form>
-            Gebruikersnaam:<br>
-            <input type="text" name="gebruikersnaam"><br>
-            Wachtwoord: <br>
-            <input type="password" name="wachtwoord"><br>
-            <input type="submit" value="Inloggen">
-        </form>
-    <b>account aanmaken</b>
-        <form>
-            Voornaam: <br>
-            <input type="text" name="voornaam"><br>
-            Achternaam: <br>
-            <input type="text" name="achternaam"><br>
-            Gebruikersnaam:<br>
-            <input type="text" name="gebruikersnaam"><br>
-            E-mail: <br>
-            <input type="email" name="email"><br>
-            Wachtwoord: <br>
-            <input type="password" name="wachtwoord"><br>
-            Herhalen wachtwoord:<br>
-            <input type="password" name='wachtwoord'><br>
-            <input type="submit" name="aanmaken">
-        </form>
+    <header>
+        <nav> 
+           <img src="images/logons.png" alt='Logo NS'> <img id="menu-switch" src="images/hamburgermenu.png" alt='Hamburgermenu'>
+                <ul id="main-menu">
+                    <li><img src="images/verhalen.png" alt="verhalen"><a href="index.html">Verhalen</a></li>
+                    <li><img src="images/info.png" alt="info">Over</li>
+                    <li><img src="images/account.png" alt="account"><a href="inlog.html">Account</a></li>
+                    <li><img src="images/loep.png" alt="zoeken">Zoeken</li>
+                </ul>
+        </nav> 
+        <img src="images/centraal.png" alt="Amsterdam Centraal">
+        <div>
+            <div>
+                <h1>Welkom op de verhalenwebsite!</h1>
+                <p>Ben je al op vakantie of wil je je graag even voorbereiden op de wereldse reis die je gaat maken? Wij van de NS maken jouw reis completer met allerlei verhalen.</p>
+                <p>We wensen je een fijne reis en geniet van de verhalen.</p>
+            </div>
+            <p>Ingelogt als: <a href='inlog.html'>Iris Tijdhof</a></p>
+        </div>
+    </header> <b>inloggen</b>
+    <form> Gebruikersnaam:
+        <br>
+        <input type="text" name="gebruikersnaam">
+        <br> Wachtwoord:
+        <br>
+        <input type="password" name="wachtwoord">
+        <br>
+        <input type="submit" value="Inloggen"> </form> <b>account aanmaken</b>
+    <form> Voornaam:
+        <br>
+        <input type="text" name="voornaam">
+        <br> Achternaam:
+        <br>
+        <input type="text" name="achternaam">
+        <br> Gebruikersnaam:
+        <br>
+        <input type="text" name="gebruikersnaam">
+        <br> E-mail:
+        <br>
+        <input type="email" name="email">
+        <br> Wachtwoord:
+        <br>
+        <input type="password" name="wachtwoord">
+        <br> Herhalen wachtwoord:
+        <br>
+        <input type="password" name='wachtwoord'>
+        <br>
+        <input type="submit" name="aanmaken"> </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>s
+    <script src="js/script.js"></script>
 </body>
+
 </html>

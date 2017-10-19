@@ -1,0 +1,265 @@
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arctik Light', sans-serif;
+    background-color: #E6E6E9;
+}
+
+/* Header */
+
+header ul.active {
+	display: inherit;
+}
+
+/* Rechthoek: */
+
+header nav {
+    padding: .8em;
+    background-color: #fff;
+}
+
+header nav > img {
+    width: 3.1875em;
+    height: 1.25em;
+}
+
+body > div:first-of-type {
+    display: block;
+    width: 100%;
+    height: 10.5em;
+    background-image: url(../images/centraalstation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	padding-top: 10em;
+}
+
+#menu-switch {
+    width:  1.9375em;
+    height: 1.0625em;
+    margin-left: 1em;
+}
+
+header ul {
+    list-style: none;
+    display: none;
+}
+
+header li {
+    border-bottom: .0625rem solid #e6e6e9;
+}
+
+header li img {
+    height: 1.5em;
+    padding: .5em .5em .5em 0;
+}
+
+header li a {
+    text-decoration: none;
+    color: #003082;
+    height: 1.5em;
+}
+
+/* Inloggedeelte */
+
+header > img {
+    display: block;
+    width: 100%;
+}
+
+body > div {
+    background-image: url('../images/trein.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    position: relative;
+    top: -1.625em;
+}
+
+body > div > div {
+    background-color: #ffc917;
+    border-left: .4em solid #003082;
+    padding: 0.5em;
+    margin: 0 .875em;
+    color: #003082;
+    border-bottom: .125em solid #D8D8D8;
+}
+
+body > div > div p {
+    margin: 0.4em 0;
+}
+
+body > div h1 {
+    font-size: 1.25em;
+    color: #003082;
+    margin-bottom: .5em;
+}
+
+/* formulieren */
+
+form h2 {
+    width: 100%;
+	margin-bottom: .5em;
+	font-size: 1.2em;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.25em;
+    margin-bottom: .5em;
+}
+
+input[type="submit"] {
+    background-color: #137BCF;
+    border: none;
+    color: white;
+    display: block;
+    font-size: .8125em;
+    border-bottom: .125em solid #00399E;
+    padding: .376em .25em .25em 0.5em;
+    margin-top: .6875em;
+    margin-bottom: .9375em;
+    margin-left: 40%;
+	    text-align: left;text-align: left;
+}
+
+input[type="submit"]:hover {
+	box-shadow: inset 0 -2rem 0 #005ca0;
+	transition: box-shadow .15s ease-in-out;
+}
+
+div a {
+    display: block;
+    font-size: .625em;
+    margin-bottom: 2em;
+    
+}
+
+/* Flexbox voor inloggen */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 40%;
+	margin-bottom: .5625em;
+}
+
+input {
+    width: 55%;
+    height: 2em;
+    margin-bottom: .5em;
+    margin-right: 1.3125em;
+}
+
+/* States: */
+
+/*Bronnen: https://www.w3schools.com/cssref/sel_focus.asp
+*/
+
+label:after {
+	content: " *";
+	color: red;
+	font-weight: red;
+}
+
+form input:focus {
+	background-color: #E6E6E9;
+}
+
+form input:required {
+	
+}
+
+form input[type="text"]:invalid,
+form input[type="password"]:invalid,
+form input[type="email"]:invalid {
+	box-shadow: inset -4px 0px 0px red;
+}
+
+form input:focus {
+	box-shadow: inset -4px 0px 0px orange;
+}
+
+form input:valid {
+	box-shadow: inset -4px 0px 0px green;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+	border: none;
+}
+
+
+
+
+
+
+/* iPad Media Queries */
+
+@media screen and (min-width: 40em) {
+	body > div > div {
+		margin: 0 5em;
+	}
+	
+	body > div h1 {
+		font-size: 2.25em;
+	}
+
+	form h2 {
+		font-size: 1.5em;
+	}
+	
+	label {	
+		font-size: 1.375em;
+	}
+
+	input[type="submit"] {
+		width: 8em;
+	}
+	
+	body > div:first-of-type {
+		height: 19.7em;
+	}
+
+}
+
+input:focus { 
+    background-color: yellow;
+}
+
+/* Desktop Media Queries */
+
+@media screen and (min-width: 70em) {
+	
+	body > div:first-of-type {
+		height: 27.4375em;
+	}
+	body > div > div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	form {
+		width: 50%;
+	}
+	
+	input {
+		margin-right: -8em;
+	}
