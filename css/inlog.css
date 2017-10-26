@@ -36,7 +36,7 @@ body > div:first-of-type {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	padding-top: 10em;
+	padding-top: 8em;
 }
 
 #menu-switch {
@@ -52,11 +52,12 @@ header ul {
 
 header li {
     border-bottom: .0625rem solid #e6e6e9;
+	color: #003082;
 }
 
 header li img {
-    height: 1.5em;
-    padding: .5em .5em .5em 0;
+    height: 2.5em;
+    padding: .5em .5em 0 .2em;
 }
 
 header li a {
@@ -78,7 +79,6 @@ body > div {
     background-position: center;
     background-size: 200%;
     position: relative;
-    top: -1.625em;
 }
 
 body > div > div {
@@ -145,7 +145,7 @@ div a {
     display: block;
     font-size: .625em;
     margin-bottom: 2em;
-    
+    margin-left: 13em;
 }
 
 /* Flexbox voor inloggen */
@@ -172,32 +172,22 @@ input {
 /*Bronnen: https://www.w3schools.com/cssref/sel_focus.asp
 */
 
-label:after {
-	content: " *";
-	color: red;
-	font-weight: red;
-}
-
 form input:focus {
 	background-color: #E6E6E9;
-}
-
-form input:required {
-	
 }
 
 form input[type="text"]:invalid,
 form input[type="password"]:invalid,
 form input[type="email"]:invalid {
-	box-shadow: inset -4px 0px 0px red;
+	box-shadow: inset -.25em 0 0 red;
 }
 
 form input:focus {
-	box-shadow: inset -4px 0px 0px orange;
+	box-shadow: inset -.25em 0 0 orange;
 }
 
 form input:valid {
-	box-shadow: inset -4px 0px 0px green;
+	box-shadow: inset -.25em 0 0 green;
 }
 
 form input[type="text"],
@@ -206,16 +196,16 @@ form input[type="email"] {
 	border: none;
 }
 
-
-
-
-
-
 /* iPad Media Queries */
 
 @media screen and (min-width: 40em) {
+	header nav {
+		font-size: 1.375em;
+	}
+	
 	body > div > div {
-		margin: 0 5em;
+    	margin: -3em 2em 2em 2em;
+		padding: 1em 1.3em;
 	}
 	
 	body > div h1 {
@@ -223,7 +213,7 @@ form input[type="email"] {
 	}
 
 	form h2 {
-		font-size: 1.5em;
+		font-size: 1.9em;
 	}
 	
 	label {	
@@ -235,13 +225,31 @@ form input[type="email"] {
 	}
 	
 	body > div:first-of-type {
-		height: 19.7em;
+		height: 15em;
+		padding-top: 16em;
+	}
+	
+	div a {
+		font-size: 1.1em;
+		margin-left: 12.5em;
+		margin-bottom: 1em;
+	}
+	
+	label {
+		margin-bottom: .3em;
+		margin-top: .3em;
+	}
+	
+	form input:valid {
+		font-size: 1.1em;
+		font-weight: lighter;
+	}
+	
+	form input[type="text"]:invalid, form input[type="password"]:invalid, form input[type="email"]:invalid {
+		height: 3em;
+		margin-bottom: 1em;
 	}
 
-}
-
-input:focus { 
-    background-color: yellow;
 }
 
 /* Desktop Media Queries */
@@ -249,17 +257,72 @@ input:focus {
 @media screen and (min-width: 70em) {
 	
 	body > div:first-of-type {
-		height: 27.4375em;
+		height: 18em;
 	}
+	
 	body > div > div {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 2em;
+		margin: 0 5em 1em 5em;
+	}
+	
+	body > div h1 {
+		font-size: 3em;
+		width: 100%;
 	}
 	
 	form {
 		width: 50%;
 	}
 	
+	form h2 {
+		font-size: 1.7em;
+	}
+	
 	input {
 		margin-right: -8em;
+	}
+	
+	label {
+		font-size: 1.5em;
+	}
+	
+	form:nth-of-type(1) h2{
+		margin-bottom: -1em;
+	}
+	
+	form:nth-of-type(2) h2{
+		margin-bottom: .9em;
+	}
+	
+	form:nth-of-type(1) label:nth-of-type(2) {
+		margin-top: -4.6em;
+	}
+	
+	form:nth-of-type(1) label:nth-of-type(1) {
+		margin-top: -2.2em;
+	}
+	
+	form:nth-of-type(1) input:nth-of-type(1) {
+		margin-top: -4.8em;
+	}
+	
+	form:nth-of-type(1) input:nth-of-type(2) {
+		margin-top: -10.1em;
+	}
+	
+	form:nth-of-type(1) a {
+		margin-left: 13.8em;
+		margin-top: -3em;
+	}
+	
+	form:nth-of-type(2) a {
+		margin-left: 13.6em;
+		margin-top: .1em;
+	}
+	
+	#inloggen {
+		margin-top: -6em;
+		margin-left: -8.7em;
 	}

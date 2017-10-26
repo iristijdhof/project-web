@@ -12,7 +12,7 @@
 <body>
 	<header>
         <nav> 
-           <img src="images/logons.png" alt='Logo NS'> <img id="menu-switch" src="images/hamburgermenu.png" alt='Hamburgermenu'> <h5>Menu</h5>
+           <img src="images/logons.png" alt='Logo NS'> <img id="menu-switch" src="images/hamburgermenu.png" alt='Hamburgermenu'>
                 <ul id="main-menu">
                     <li><img src="images/verhalen.png" alt="verhalen"><a href="index.html">Verhalen</a></li>
                     <li><img src="images/info.png" alt="info">Over</li>
@@ -22,38 +22,36 @@
         </nav>
 	</header> 
 			<div>
-			
 				<div>
 					<h1>Welkom op jouw verhalen-account!</h1> 
 					<form>
 						<h2>Inloggen</h2>
-							<label for="gebruikersnaam">Gebruikersnaam: </label>
-								<input id="gebruikersnaam" type="text" name="gebruikersnaam" required>
-                           		<label for="wachtwoord">Wachtwoord: </label>
-                            	<input id="wachtwoord" type="password" name="wachtwoord" required>
-                            	<input id="inloggen" type="submit" value="Inloggen   >"> 
-                            	<a>Wachtwoord vergeten</a>
+						<label for="gebruikersnaam">Gebruikersnaam: </label>
+							<input id="gebruikersnaam" type="text" name="gebruikersnaam" required>
+						<label for="wachtwoord">Wachtwoord: </label>
+							<input id="wachtwoord" type="password" name="wachtwoord" pattern=".{8,}" required>
+						<a>Wachtwoord vergeten</a>
+							<input id="inloggen" type="submit" value="Inloggen   >"> 
                     </form>
                     <form>
-                            <h2>Account aanmaken</h2>
-                            <label for="voornaam">Voornaam: </label>
-                            	<input id="voornaam" type="text" name="voornaam" required>
-                            <label for="achternaam">Achternaam: </label>
-                            	<input id="achternaam" type="text" name="achternaam">
-                            <label for="gebruikersnaam1">Gebruikersnaam: </label>
-                            	<input id= "gebruikersnaam1" type="text" name="gebruikersnaam" required>
-                            <label for="email">E-mail: </label>
-                            	<input id="email" type="email" name="email" required>
-                            <label for="wachtwoord1">Wachtwoord: </label>
-                            	<input id="wachtwoord1" type="password" name="wachtwoord" pattern=".{8,}" required>
-                            <label for="wachtwoord2">Bevestigen wachtwoord: </label>
-                            	<input id="wachtwoord2" type="password" name="wachtwoord" pattern=".{8,}" required>
-                            	<input id="aanmaken" type="submit" value="Aanmaken  >"> 
+						<h2>Account aanmaken</h2>
+						<label for="voornaam">Voornaam: </label>
+							<input id="voornaam" type="text" name="voornaam" required>
+						<label for="achternaam">Achternaam: </label>
+							<input id="achternaam" type="text" name="achternaam" required>
+						<label for="gebruikersnaam1">Gebruikersnaam: </label>
+							<input id= "gebruikersnaam1" type="text" name="gebruikersnaam" required>
+						<label for="email">E-mail: </label>
+							<input id="email" type="email" name="email" required>
+						<label for="wachtwoord1">Wachtwoord: </label>
+							<input id="wachtwoord1" type="password" name="wachtwoord" pattern=".{8,}" required>
+						<label for="wachtwoord2">Bevestigen wachtwoord: </label>
+							<input id="wachtwoord2" type="password" name="wachtwoord" pattern=".{8,}" required>
+						<a>Wachtwoord moet voldoen aan 8 tekens</a>
+							<input id="aanmaken" type="submit" value="Aanmaken  >"> 
                     </form>	
-                </div>
+				</div>
             </div>
-            		<div></div>
-   
     <script src="js/script.js"></script>
 </body>
 
@@ -61,3 +59,5 @@
 
 
 <!-- Bron pattern wachtwoord: 
+- https://www.w3schools.com/tags/att_input_pattern.asp
+- https://www.w3schools.com/tags/att_pattern.asp

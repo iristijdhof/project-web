@@ -21,14 +21,14 @@ body {
 	transform: scale(0);
 	transition: all .2s ease-in;
 	position: absolute;
-	top: -100px;
+	top: 6.25em;
 	width: 100%;
 }
 
 .message span {
 	position: absolute;
     right: 1em;
-	top: 1em;
+	top: 1.5em;
 }
 
 .message.active {
@@ -37,33 +37,28 @@ body {
 }
 
 .message.active ~ header {
-	margin-top: 61px;
+	margin-top: 3.8125em;
 }
 
 .message.red {
 	background-color: red;
+    padding-right: 2em;
 }
 
 .message.green {
-	background-color: green;
+    background-color: green;
+    padding-right: 2em;
 }
 
 .message button {
 	color: white;
 }
 
-h5 {
-    font-weight: normal;
-    color: #003082;
-    margin-left: .2em;
-    font-size: 1.5em;
-    display: none;
-}	
-
 h4 {
     color: #137BD0;
     font-size: .9em;
 	margin-bottom: .7em;
+	font-weight: normal;
 }
 
 header nav {
@@ -133,7 +128,7 @@ body > div:nth-of-type(2) > div {
     padding: 0.5em;
     margin: 0 .875em;
     color: #003082;
-    box-shadow: 0 2px 0 0 #D8D8D8;
+    box-shadow: 0 .125em 0 0 #D8D8D8;
 }
 
 body > div:nth-of-type(2) > div p {
@@ -150,7 +145,7 @@ body > div:nth-of-type(2) > p {
     color: #137BD0;
     font-size: .9em;
     line-height: .9375em;
-    margin-top: .3125em;
+    margin-top: .7em;
     text-align: right;
     margin-right: .875em;
 }
@@ -183,7 +178,8 @@ form ul > li {
 
 form ul li li {
     color: #010864;
-    width: 9.25em;
+    width: 10em;
+	margin-left: 1em;
 }
 
 form ul ul {
@@ -191,12 +187,20 @@ form ul ul {
     display: none;
     position: absolute;
     top: 1.6875em;
-    max-height: 191px;
+    max-height: 11.9375em;
     overflow-y: scroll;
 }
 
 form ul li:hover > ul {
 	display:block
+}
+
+form ul > li{
+	margin-left: -4em;
+}
+
+form ul li:nth-of-type(2) {
+	margin-left: 1em;
 }
 
 /* verhalen */
@@ -212,13 +216,13 @@ main article {
     background-color: #fff;
     border-bottom: .125em solid #D8D8D8;
 	margin-bottom: 1em;
+    padding: .4em .8em;
 }
 
 main article h2 {
     width: 100%;
-    margin-bottom: 0em;
 	font-weight: normal;
-	font-size: 1.5em;
+	font-size: 1.25em;
     font-family: 'Arctik Regular', sans-serif;
     color: #010864;
 }
@@ -247,11 +251,19 @@ main article > div img {
 main article p {
     color: #232856;
     line-height: 1rem;
+	margin-bottom: .3em
+}
+
+main article div div footer p {
+	font-size: .625em;
+	line-height: .6875rem;
+	margin-top: .3em
 }
 
 main article footer {
     display: flex;
     margin-top: auto;
+	justify-content: space-between;
 }
 
 main article footer a {
@@ -264,15 +276,16 @@ main article footer a {
 }
 
 main article footer a:last-of-type {
-    width: 50%;
+    width: 80%;
     background-color: #137BCF;
     color: #fff;
-    font-size: .8125em;
-    padding: 0 .5em;
+    font-size: .8em;
+    padding: 0 .1em;
     text-align: center;
     display: block;
     line-height: 2.375em;
-    border-bottom: .125px solid #00399E;
+    border-bottom: .125em solid #00399E;
+	max-width: 5.5em;
 }
 
 main article footer a img {
@@ -290,7 +303,7 @@ main > h2 {
     font-size: .9em;
     line-height: .9375em;
     font-weight: normal;
-    margin-top: .5em;
+    margin: .7em 0;
 }
 
 
@@ -301,16 +314,21 @@ main > h2 {
 
 @media screen and (min-width: 40em) {
 	
-	h5 {
-		display: inline;
+	header nav {
+		font-size: 1.1em;
+	}
+	
+	header li a {
+		font-size: 1.1em;
 	}
 	
 	body > div:first-of-type {
-		height: 19.7em;
+		height: 15em;
 	}
 	
 	body > div:nth-of-type(2) > div {
-    	margin: 0 5em;
+    	padding: 1em 1.3em;
+		margin: 0 2em;
 	}
 	
 	body > div:nth-of-type(2) {
@@ -318,8 +336,8 @@ main > h2 {
 	}
 	
 	body > div:nth-of-type(2) > p {
-		margin-right: 5.5em;
-		margin-top: .625em;
+		margin-right: 1.8em;
+		font-size: 1.1em;
 	}
 	
 	body > div:nth-of-type(2) h1 {
@@ -338,12 +356,13 @@ main > h2 {
 	}
 	
 	main {
-		margin: 0 5em;
+		margin: 0 2em 1em 2em;
 	}
 	
 	main > h2 {
 		width: 100%;
-		margin-left: .3em;
+		font-size: 1.1em;
+    	margin-bottom: 1em;
 	}
 	
 	main article {
@@ -366,6 +385,25 @@ main > h2 {
     	font-size: 1.125em;
 	}
 	
+	main article h2 {
+		font-size: 1.6em;
+	}
+	
+	main article div div footer p {
+		font-size: 1.1em;
+		line-height: 1em;
+	}
+	
+	main article footer a:last-of-type {
+		border-bottom: .2em solid #00399E;
+		font-size: 1.1em;
+		max-width: 9em;
+	}
+	
+	h4 {
+		font-size: 1.1em;
+	}
+	
 	.flex {
 		flex-wrap: wrap;
 	}
@@ -376,6 +414,38 @@ main > h2 {
 	
 	.like-icon {
     	height: 2.4375rem;
+		margin-left: -.3em;
+	}
+	
+	.message.red {
+		padding-right: 6em;
+		padding-top: .8em;
+		height: 3.5em;
+		font-size: 1.1em;
+	}
+
+	.message.green {
+		padding-right: 6em;
+		padding-top: .8em;
+		height: 3.5em;
+		font-size: 1.1em
+	}
+	
+	form ul > li{
+		font-size: 1.375em;
+		margin-left: -2.2em;
+	}
+	
+	form ul ul {
+    	max-height: 12.8125em;
+	}
+	
+	form ul li li {	
+		font-size: 1.1em;
+	}
+	
+	form ul li:hover > ul {
+		max-height: 12em;
 	}
 }
 
@@ -383,17 +453,42 @@ main > h2 {
 
 @media screen and (min-width: 70em) {
 	
-	header nav {
-		padding: 0.8em 0 0.8em 5em;
-	}
-	
 	main article {
 		width: 32%;
-		padding: .8em 0.7em 0em;
+		padding: .8em 0.7em .8em;
+	}
+	
+	main {
+		margin: 0 5em;
+	}
+	
+	main > h2 {
+		font-size: 1.125em;
+		margin-top: 2em;
+	}
+	
+	main article h2 {
+    	font-size: 1.7em;
+	}
+	
+	main article p {
+		font-size: 1.4em;
+		line-height: 1.1em;
+	}
+	
+	main article footer a:last-of-type {
+		font-size: 1.3em;
+		border-bottom: .2em solid #00399E;
+	}
+	
+	main article div div footer p {
+		font-size: 1.1em;
+		line-height: 1em;
+		margin-right: 1em;
 	}
 	
 	body > div:first-of-type {
-    	height: 27.4375em;
+    	height: 18em;
 	}
 	
 	body > div:nth-of-type(2) h1 {
@@ -422,13 +517,13 @@ main > h2 {
     font-size: 1.5em;
 	}
 	
-	form > ul {
-		margin-left: -2.5em;
+	header li img {
+		height: 2em;
+		padding: .5em .5em 0 .2em;
 	}
 	
-	form ul > li:first-of-type {
-		font-size: 1.5em;
-		margin-left: 5em;
+	form > ul {
+		margin-left: -2.5em;
 	}
 	
 	form ul > li {
@@ -440,31 +535,12 @@ main > h2 {
 		font-size: 1.125em;
 	}
 
-	main > h2 {
-		font-size: 1.125em;
-		margin-top: 2em;
-	}
-	
-	main article h2 {
-    	font-size: 1.8125em;
-	}
-	
-	main article p {
-		font-size: 1.5em;
-		line-height: 1.1em;
-	}
-	
 	.like-icon {
     	height: 2.5625rem;
 	}
 	
 	main article footer a {
     	font-size: 1.3em;
-	}
-	
-	main article footer a:last-of-type {
-		font-size: 1.3em;
-		border-bottom: .2em solid #00399E;
 	}
 	
 	form ul li li {
@@ -474,3 +550,23 @@ main > h2 {
 	article div div > footer a p {
 		font-size: 1.5em;
 	}
+	
+	.message.red {
+		padding-top: 1.3em;
+	}
+
+	.message.green {
+		padding-top: 1.3em;
+	}
+	
+
+	form > ul {
+		margin: 0 5em;
+	}
+
+
+	form ul > li {
+		margin: 0em;
+	}
+
+	
